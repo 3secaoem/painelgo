@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet 2.0 - CBMMG</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            width: 100%;
+            background: #32445A;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .header img {
+            max-height: 50px;
+        }
+        .title {
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 70px; /* Adjust based on your header size */
+            padding: 20px 0;
+            position: fixed;
+            top: 60px; /* Adjust this value to position the title below the header */
+            left: 0;
+            z-index: 1000;
+            background: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 140px; /* Increased offset to accommodate the title */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: #fff;
+        }
+        .card {
+            margin: 10px;
+            flex: 1 1 20%; /* Allows flex items to grow and shrink to fit */
+            max-width: 180px; /* Maximum width of each card */
+            text-align: center;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .card i {
+            font-size: 48px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .card a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://hml.intranet.bombeiros.mg.gov.br/assets/v2/images/logo_cbmmg_v2.png" alt="Logo CBMMG">
+    </div>
+    <div class="title">
+        Painel de Gestão Operacional
+    </div>
+    <div class="container">
+        <div class="card">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_5gRr9LpTmZELz55goKKLOQBUM0LNU7chEs31rEuqf4pjMg/viewform">
+                <i class="fas fa-file-alt"></i>
+                <p>Anúncios</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://www.cbmmg.mg.gov.br/indicadores">
+                <i class="fas fa-chart-bar"></i>
+                <p>Indicadores Operacionais</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://www.cbmmg.mg.gov.br/informativos">
+                <i class="fas fa-bullhorn"></i>
+                <p>Informativos</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://www.cbmmg.mg.gov.br/escalas">
+                <i class="fas fa-calendar-alt"></i>
+                <p>Escalas</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
